@@ -1,0 +1,6 @@
+name: Itempro
+version: 0.1
+main: me.hadyman.br.Main
+commands: 
+    pegaritem:
+       description: Recolha seu machado

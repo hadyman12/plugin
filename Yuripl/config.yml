@@ -1,0 +1,46 @@
+#Plugin ItemPRO
+#Criador: HadyMan
+#Versão: 1.0
+#Conheça o plugin: Plugin criado por HadyMan, onde o jogador que tiver a permissão < itempro.pegar > tem acesso ao machado de Zeus
+#Esse machado possui as mensagens totalmente editáveis e seu dano é de +20 ou seja, dano do machado de diamante normal + 20 (Dano)
+#Nas próximas versões será possível alterar o dano causado.
+#Dica: Converta suas mensagens para ANSI caso fique com os acentos < bugados >
+#O plugin apresenta-se na fase BETA
+#Em casos de bug, contate atravez do Skype: live:hadyman67
+
+Licenca:
+
+#Altere as mensagens
+
+#(Jogador sem permissão < itempro.pegar >)
+msg_sem_permi: "&4[&eItemPRO&4] &cVocê não tem permissão para executar esse comando"
+
+#(Jogador recebendo o machado de Zeus)
+Msg_recebendo: "&4[&eItemPRO&4] &aVocê recebeu o machado de &4&l&nZeus!"
+
+#Altere o nome e lore do Machado
+
+#(Nome do Machado)
+Nome_Machado: "&bMachado de &4&l&nZeus" 
+
+#(Lore)
+#Obs: Não tente adicionar mais linhas nessa lore, o máximo é de 3 linhas...
+Linha1: "&aChance Relâmpago: &c50%"
+Linha2: "&aDano: &c+20"
+Linha3: "&aChance pode ser alterada na &fconfig &a!"
+
+#(Chance de Soltar raios)
+#Não é necessário colocar < % > Apenas o número
+
+Chance: 50
+
+#(Dano do machado)
+#ATENÇÃO!!! Esse dano é somado com o dano do machado de diamante normal (Sem encantamentos)
+#Por exemplo: Se for colocado 20 será o dano do machado de diamante (6) + 20
+
+Dano: 1
+
+
+
+
+

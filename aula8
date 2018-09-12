@@ -1,0 +1,39 @@
+package br.com.pl;
+
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.AsyncPlayerChatEvent;
+import org.bukkit.event.server.ServerListPingEvent;
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class Main extends JavaPlugin implements Listener {
+	
+	@Override
+	public void onEnable() {
+		Bukkit.getPluginManager().registerEvents(this, this);
+	}
+	
+	@Override
+	public void onDisable() {
+
+	}
+	
+	@EventHandler
+	public void onChat(AsyncPlayerChatEvent e) {
+		Player pSender = e.getPlayer();
+		if (pSender.hasPermission("sv.dono")) {
+			e.setFormat("§7[Chat] §4[§c§lDono§4] §9" + pSender.getName() + " §f» §6" + e.getMessage());
+		} else {
+			e.setFormat(pSender.getName() + "§f: §e" + e.getMessage());
+		}
+			
+	}
+
+	@EventHandler
+	public void onMotd(ServerListPingEvent e) {
+		e.setMotd("§a§l» §c§lInscreva-se no §nCanal§r §a§l«");
+		e.setMaxPlayers(2018);
+	}
+}
